@@ -1,0 +1,17 @@
+If you're looking to test new plays or do some debugging, there are a few alternative ways to run playbooks in Ansible. Using these switches can help you catch problems in your code more quickly. Here is a breakdown of a few:
+
+-vvvv enables connection debugging.
+--step causes Ansible to stop on each task and ask if it should execute that task.
+--check enables check mode, where Ansible runs without making any changes on remote systems.
+--diff enables diff mode, where Ansible provides before-and-after comparisons.
+--start-at-task starts executing your playbook at a particular task.
+
+_______________________________________________________
+sudo vi /etc/ansible/hosts
+ansible -m command -a 'uptime' 172.20.50.81
+ansible -m ping 172.20.50.81
+ssh-copy-id ansible@azvansiblet01 -f
+
+ansible -m ping OBBservers
+
+ansible-playbook  installxdr.yml --check -vv
