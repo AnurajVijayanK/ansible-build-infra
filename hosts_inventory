@@ -19,15 +19,15 @@ _______________________________
 
 [ManagmentServer]
 azvlinuxmgt01   ansible_user=ansible
-#172.20.50.79   ansible_user=ansible
+#172.xx.50.yy   ansible_user=ansible
 
 [OBBservers]
 azvansiblet02   ansible_user=ansible
-#172.20.50.80   ansible_user=ansible
+#172.xx.50.yy   ansible_user=ansible
 
 [IDAMservers]
 azvansiblet01   ansible_user=ansible ansible_python_interpreter=/usr/bin/python3
-#172.20.50.81   ansible_user=ansible ansible_python_interpreter=/usr/bin/python3
+#172.xx.50.yy   ansible_user=ansible ansible_python_interpreter=/usr/bin/python3
 
 [AllserverPathing]
 azvansiblet01
