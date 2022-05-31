@@ -9,7 +9,7 @@ If you're looking to test new plays or do some debugging, there are a few altern
 _______________________________________________________
 sudo vi /etc/ansible/hosts
 ansible -m command -a 'uptime' 172.20.50.81
-ansible -m ping 172.20.50.81
+ansible -m ping 172.xx.50.xx
 ssh-copy-id ansible@azvansiblet01 -f
 
 ansible -m ping OBBservers
